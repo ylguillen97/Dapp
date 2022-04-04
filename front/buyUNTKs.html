@@ -1,0 +1,60 @@
+ <!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+	<meta charset = "utf-8"/>
+	<title> DRONE COMPANY </title>
+	<link rel="stylesheet" type="text/css" href="style.css" media="screen">
+</head>
+
+<body>
+	<header>	
+		<h1 href="index.html"> <img src="logo2.jpg" width="80" height="50"> Drone <span style="color:gold;">Company</span> </h1> 
+		<hr>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			  <ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="regDron.html">Registra tu dron</a>
+				  </li>
+				  <li class="nav-item">
+					  <a class="nav-link" href="regPlot.html">Registra tu parcela</a>
+				  </li>
+				  <li class="nav-item">
+					  <a class="nav-link" href="buyUNTKs.html">Compra UNTKs</a>
+				  </li>
+				  <li class="nav-item">
+					  <a class="nav-link" href="#">Contacto</a>
+				  </li>
+			  </ul>
+			</div>
+		  </nav>
+		  <br>
+	  </header>
+	  <main class="box"> 
+	 	<div class="container">
+			<div class="row">
+				<div class="col-md-4"><br>
+					<input type = "text" class="form-check-inline" id="amount" placeholder="Tokens"></input><br><br>
+					<button name="button" class="btn btn-dark" id = "btnBuyToken"> COMPRA TUS TOKENS </button><br><br>
+				</div>
+				<div class="col-md-4"><br>
+					<h3> ¿Quieres consultar tu balance de tokens? </h3>
+					<button name="button" class="btn btn-dark" id = "btnGetBalance"> BALANCE </button><br><br>
+					<div id = "printBalance"></div>
+				</div>
+			</div>
+		</div>
+		</div>
+		</main>
+	</body>
+
+  <script src="./js/web3.min.js"></script>
+  <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
+  <script src="./js/buyUNTK.js"></script>
+
+</html>
+	

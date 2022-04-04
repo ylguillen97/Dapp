@@ -1,0 +1,83 @@
+ <!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+	<meta charset = "utf-8"/>
+	<title> DRONE COMPANY </title>
+	<link rel="stylesheet" type="text/css" href="style.css" media="screen">
+</head>
+
+<body>
+	<header>	
+		<h1 href="index.html"> <img src="logo2.jpg" width="80" height="50"> Drone <span style="color:gold;">Company</span> </h1> 
+		<hr>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			  <ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="regDron.html">Registra tu dron</a>
+				  </li>
+				  <li class="nav-item">
+					  <a class="nav-link" href="regPlot.html">Registra tu parcela</a>
+				  </li>
+				  <li class="nav-item">
+					  <a class="nav-link" href="buyUNTKs.html">Compra UNTKs</a>
+				  </li>
+				  <li class="nav-item">
+					  <a class="nav-link" href="#">Contacto</a>
+				  </li>
+			  </ul>
+			</div>
+		  </nav>
+		  <br>
+	  </header>
+	  <main class="box"> 
+	 	<div class="container">
+			<br>
+			<div class="row">
+				<div class="col-md-4">	
+				<input type = "text"  class= "form-check-inline" id="maxheight" placeholder="Altura máxima"></input><br><br>
+				<input type = "text" class= "form-check-inline" id="minheight" placeholder="Altura mínima"></input><br><br>
+				<input type = "text" class= "form-check-inline" id="cost" placeholder="Precio"></input><br><br>
+				<button type ="button" class="btn btn-dark" id="btnRegistraDron">REGISTRA TU DRON</button>
+				<div id="dronesRegistrados"></div>
+				<br>
+				</div>
+				<div class="col-md-4">
+					<h3>¿Quieres ver tus trabajos pendientes?</h3>
+					<button type ="button" class="btn btn-dark" id="btnGetTrabajos">Ver trabajos pendientes</button>
+					<div id="getTrabajos"></div>
+				</div>
+				
+			</div>	
+			<div class="row">
+				<div class="col-md-4">
+					<br><hr>
+					<h3>Acepta trabajos aquí.</h3>
+					<input type = "text" class= "form-check-inline" id="id_dron" placeholder="ID del Dron"></input><br><br>
+					<input type = "text" class= "form-check-inline" id="id_plot" placeholder="ID de la parcela"></input><br><br>
+					<button type ="button" class="btn btn-dark" id="btnAceptaTrabajo">Aceptar trabajo</button>
+					<br> <hr>
+					</div>
+			</div>
+			<div class="row">
+				<div id="trabajoAceptado"></div>
+			</div>
+			
+			
+		<br>
+		<hr>
+
+		</div>
+	</main>
+	</body>
+
+  <script src="./js/web3.min.js"></script>
+  <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
+  <script src="./js/registraDron.js"></script>
+
+</html>
+	
